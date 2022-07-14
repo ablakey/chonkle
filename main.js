@@ -52,6 +52,7 @@ function testCurrentInput() {
 
     if (currentInput.join("") === WORD) {
       window.alert("CHONK!");
+      return;
     }
 
     currentGuess++;
