@@ -1,0 +1,112 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  overflow: hidden;
+  touch-action: none;
+}
+
+#main {
+  width: 100%;
+  max-width: 480px;
+  height: 100%;
+  max-height: 640px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#content {
+  margin: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.keyboard {
+  margin-top: 12px;
+}
+
+.keyboard > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.keyboard > div > div {
+  height: 30px;
+  min-width: 11px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 6px;
+  background-color: #d3d6da;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.guesses {
+  flex: 2;
+}
+
+.guesses > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.guesses > div > div {
+  width: 12%;
+  aspect-ratio: 1/1;
+  border: 1px solid gray;
+  margin: 3px;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 24pt;
+
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.header > div {
+  font-size: 32pt;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: bolder;
+}
+
+.grey {
+  background-color: #787c7e;
+  color: white;
+  transition: all 500ms linear;
+}
+
+.green {
+  background-color: #6aaa64;
+  color: white;
+  transition: all 500ms linear;
+}
+
+.yellow {
+  background-color: #c9b458;
+  color: white;
+  transition: all 500ms linear;
+}
